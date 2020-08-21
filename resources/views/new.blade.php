@@ -1,11 +1,20 @@
 @extends('layouts.app')
 
 @section('title-block') New page @endsection
-
 @section('content')
     <h1>New page</h1>
     <form action="{{ route('contact-form') }}" method='post'>
         @csrf
+
+        @if($errors->any())
+            <div class="alert alert-danger">
+                <ul>
+                    @foreach($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+            </div>
+        @endif
 
         <div class="form-group">
             <label for="name">Type in name</label>
