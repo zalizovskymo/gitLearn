@@ -35,4 +35,5 @@ class NewRequest extends FormRequest
             'name.required' => 'Поле ім\'я є обов\'язковим'
         ];
     }
+
 }
