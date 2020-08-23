@@ -9,7 +9,7 @@
             <h3>{{ $el->message }}</h3>
             <p>{{ $el->email }}</p>
             <p><small>{{ $el->created_at }}</small></p>
-            <a href="#"><button class="btn btn-warning">Details</button></a>
+            <a href="{{ route('one-message-show', $el->id) }}"><button class="btn btn-warning">Details</button></a>
         </div>
     @endforeach
 @endsection

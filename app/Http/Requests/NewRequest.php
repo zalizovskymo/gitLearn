@@ -24,7 +24,7 @@ class NewRequest extends FormRequest
     public function rules()
     {
         return [
-            'message' => 'required|min:15|max:500',
+            'message' => 'required|max:500',
             'email' => 'required|email',
             'name' => 'required'
         ];
