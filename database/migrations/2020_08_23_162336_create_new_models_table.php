@@ -15,6 +15,9 @@ class CreateNewModelsTable extends Migration
     {
         Schema::create('new_models', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->text('message');
+            $table->string('name');
+            $table->string('email');
             $table->timestamps();
         });
     }
