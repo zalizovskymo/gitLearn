@@ -23,4 +23,14 @@ class NewController extends Controller{
 
         return redirect()->route('home')->with('success', 'Message sended.');
     }
+
+    public function allMessages() {
+        // $newModel = NewModel::all();
+        // dd($newModel);
+        $newModel = new NewModel();
+        //$newModel->all()
+        //$newModel->orderBy('id','asc')->skip(1)->take(1)->get()
+        //$newModel->where('id', '=', '2')->get()
+        return view('messagesView', ['data' => $newModel->all()]);
+    }
 }
