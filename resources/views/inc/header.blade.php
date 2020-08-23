@@ -3,6 +3,7 @@
   <nav class="my-2 my-md-0 mr-md-3">
     <a class="p-2 text-dark" href="{{ route('home') }}">Home</a>
     <a class="p-2 text-dark" href="{{ route('new-page') }}">New page</a>
+    <a class="p-2 text-dark" href="{{ route('messages-all') }}">Messages</a>
   </nav>
   <!-- <a class="btn btn-outline-primary" href="#">Sign up</a> -->
 </div>

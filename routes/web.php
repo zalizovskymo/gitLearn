@@ -9,3 +9,4 @@ Route::get('/new',function(){
 })->name('new-page');
 
 Route::post('/new/submit/test','NewController@submit')->name('contact-form');
+Route::get('/new/all','NewController@allMessages')->name('messages-all');
